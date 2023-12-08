@@ -123,3 +123,6 @@ form{
     padding: 10px 40px;
     cursor: pointer;
   }
+  #password_mismatch{
+    font-size: .75em;
+  }
