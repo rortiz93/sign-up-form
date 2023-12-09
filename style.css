@@ -2,6 +2,7 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
+    min-width: 300px;
 }
 
 .container{
@@ -28,6 +29,25 @@ html, body{
     
 
 }
+
+@media only screen and (max-width: 850px) {
+  .container{
+    display: flex;
+   
+    flex-direction: column;
+
+}
+
+.sidebar{
+  flex: auto;
+  min-height: 40%;
+  width: 100%;
+}
+.form-container{
+  flex: auto;
+}
+}
+
 p{
     font-family: "Poppins";
 }
@@ -126,3 +146,4 @@ form{
   #password_mismatch{
     font-size: .75em;
   }
+
